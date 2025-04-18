@@ -11,10 +11,12 @@ function Loginform () {
    const Navigate=useNavigate();
    const {setIsLoggedIn, isLoggedIn} =useContext(AppContext);
    const [showPassword,setShowPassword] =useState(false);
-   const [formData,setFormData] ={
+   const [formData,setFormData] =useState({
       email:"",
       password:"",
-   }
+   })
+     
+   
    
    function submitHandler(e){
       e.preventDefault();

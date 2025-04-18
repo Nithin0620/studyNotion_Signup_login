@@ -12,7 +12,7 @@ export default function AppContextProvider({ children }) {
     title: "Welcome Back",
     desc1: "Build skills for today, tomorrow, and beyond.",
     desc2: "Education to future-proof your career.",
-    image: { loginImg },
+    image: loginImg,
     formtype: "login"
   };
   
@@ -20,11 +20,10 @@ export default function AppContextProvider({ children }) {
     title: "Join the millions learning to code with StudyNotion for free",
     desc1: "Build skills for today, tomorrow, and beyond.",
     desc2: "Education to future-proof your career.",
-    image: { signupImg },
+    image: signupImg,
     formtype: "signup"
   };
 
-  // Wrap value in a function to avoid issues
   const value = {
     isLoggedIn,
     setIsLoggedIn,

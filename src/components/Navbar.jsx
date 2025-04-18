@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from "../assets/Logo.svg"
-import { useContext } from 'react'
+// import { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
 
 const Navbar = () => {

@@ -6,13 +6,13 @@ import { Outlet } from 'react-router-dom'
 
 const PrivateRouter = () => {
   const Navigate=useNavigate();
-    const {isLoggedIn} =useContext(AppContext);
-    if(isLoggedIn) {
-      return (<Outlet/>)
-    } 
-    else{
-      return <Navigate to="/login"/>;
-    }
+  const {isLoggedIn} =useContext(AppContext);
+  if(isLoggedIn) {
+    return (<Outlet/>)
+  } 
+  else{
+    return <Navigate to="/login"/>;
+  }
     
 }
 
